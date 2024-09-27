@@ -9,10 +9,12 @@ $mahasiswa = new Mahasiswa($db);
 
 $result = $mahasiswa->read();
 ?>
-
+  
 <h2>Data Mahasiswa</h2>
-<a href="create.php">Tambah Data</a>
-<table border="1">
+<a href="create.php"><button type="button" class="btn primary">Tambah Data</button></a>
+
+<table>
+    <thead>
     <tr>
         <th>ID</th>
         <th>Nama</th>
@@ -32,6 +34,7 @@ $result = $mahasiswa->read();
             </td>
         </tr>
     <?php endwhile; ?>
+    <thead>
 </table>
 
 <?php include 'includes/footer.php'; ?>
