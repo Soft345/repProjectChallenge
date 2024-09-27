@@ -1,0 +1,1 @@
+contoh penerapan fungsi CRUD (Create, Read, Update, Delete) menggunakan PHP Native dan JavaScript untuk manajemen data mahasiswa. Struktur folder dan manajemen file dibuat rapi dengan menggunakan pendekatan OOP dan pengelompokan file yang sesuai.
