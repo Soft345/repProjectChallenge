@@ -18,17 +18,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <h2>Tambah Data Mahasiswa</h2>
-<form method="POST">
-    <label for="nama">Nama:</label>
-    <input type="text" name="nama" required>
-    <br>
-    <label for="nim">NIM:</label>
-    <input type="text" name="nim" required>
-    <br>
-    <label for="jurusan">Jurusan:</label>
-    <input type="text" name="jurusan" required>
-    <br>
-    <input type="submit" value="Simpan">
-</form>
+
+<div class="container">
+    <form method="POST">
+        <div class="row">
+            <div class="row">
+                <div class="col-25">
+                    <label for="nama">Nama:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="nama" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nim">NIM:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="nim" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="jurusan">Jurusan:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="jurusan" required>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Simpan">
+        </div>
+    </form>
+</div>
+
 
 <?php include 'includes/footer.php'; ?>
