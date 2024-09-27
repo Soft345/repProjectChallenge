@@ -21,17 +21,41 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <h2>Edit Data Mahasiswa</h2>
-<form method="POST">
-    <label for="nama">Nama:</label>
-    <input type="text" name="nama" value="<?= $data['nama']; ?>" required>
-    <br>
-    <label for="nim">NIM:</label>
-    <input type="text" name="nim" value="<?= $data['nim']; ?>" required>
-    <br>
-    <label for="jurusan">Jurusan:</label>
-    <input type="text" name="jurusan" value="<?= $data['jurusan']; ?>" required>
-    <br>
-    <input type="submit" value="Update">
-</form>
+
+<div class="container">
+    <form method="POST">
+        <div class="row">
+            <div class="row">
+                <div class="col-25">
+                    <label for="nama">Nama:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="nama" value="<?= $data['nama']; ?>" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nim">NIM:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="nim" value="<?= $data['nim']; ?>" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="jurusan">Jurusan:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="jurusan" value="<?= $data['jurusan']; ?>" required>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Update">
+        </div>
+    </form>
+</div>
 
 <?php include 'includes/footer.php'; ?>
